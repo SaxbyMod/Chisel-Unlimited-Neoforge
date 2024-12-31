@@ -1,0 +1,9 @@
+{
+  "replace": false,
+  "values": [
+    "chisel_unlimited:bismuth_block",
+    "chisel_unlimited:bismuth_ore",
+    "chisel_unlimited:bismuth_deepslate_ore",
+    "chisel_unlimited:magic_block"
+  ]
+}

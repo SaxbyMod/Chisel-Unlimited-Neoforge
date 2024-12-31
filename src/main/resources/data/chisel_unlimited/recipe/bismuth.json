@@ -1,0 +1,19 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "group": "bismuth",
+  "category": "misc",
+  "key": {
+    "B": [
+      "chisel_unlimited:bismuth"
+    ]
+  },
+  "pattern": [
+    "BBB",
+    "BBB",
+    "BBB"
+  ],
+  "result": {
+    "count": 1,
+    "id": "chisel_unlimited:bismuth_block"
+  }
+}

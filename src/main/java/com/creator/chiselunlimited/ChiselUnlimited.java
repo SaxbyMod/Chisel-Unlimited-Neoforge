@@ -1,5 +1,7 @@
 package com.creator.chiselunlimited;
 
+import com.creator.chiselunlimited.block.ModAddedBlocks;
+import com.creator.chiselunlimited.item.ModAddedCreativeTabs;
 import com.creator.chiselunlimited.item.ModAddedItems;
 import org.slf4j.Logger;
 import com.mojang.logging.LogUtils;
@@ -53,7 +55,9 @@ public class ChiselUnlimited
         // Do not add this line if there are no @SubscribeEvent-annotated functions in this class, like onServerStarting() below.
         NeoForge.EVENT_BUS.register(this);
 
+        ModAddedCreativeTabs.RegisterMyTabs(modEventBus);
         ModAddedItems.RegisterMyItems(modEventBus);
+        ModAddedBlocks.RegisterMyBlocks(modEventBus);
 
         // Register the item to a creative tab
         modEventBus.addListener(this::addCreative);
@@ -71,6 +75,22 @@ public class ChiselUnlimited
         // Add BISMUTH to INGREDIENTS
         if (event.getTabKey() == CreativeModeTabs.INGREDIENTS) {
             event.accept(ModAddedItems.BISMUTH.get());
+            event.accept(ModAddedItems.RAW_BISMUTH.get());
+            event.accept(ModAddedItems.FROSTFIRE_ICE.get());
+            event.accept(ModAddedItems.STARLIGHT_ASHES.get());
+        }
+        if (event.getTabKey() == CreativeModeTabs.BUILDING_BLOCKS) {
+            event.accept(ModAddedBlocks.BISMUTH_BLOCK.get());
+            event.accept(ModAddedBlocks.BISMUTH_ORE.get());
+        }
+        if (event.getTabKey() == CreativeModeTabs.TOOLS_AND_UTILITIES) {
+            event.accept(ModAddedItems.CHISEL.get());
+        }
+        if (event.getTabKey() == CreativeModeTabs.FUNCTIONAL_BLOCKS) {
+            event.accept(ModAddedBlocks.MAGIC_BLOCK.get());
+        }
+        if (event.getTabKey() == CreativeModeTabs.FOOD_AND_DRINKS) {
+            event.accept(ModAddedItems.RADISH.get());
         }
     }
 
