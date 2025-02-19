@@ -1,18 +1,11 @@
 {
-  "item.chisel_unlimited.bismuth": "Bismuth",
-  "item.chisel_unlimited.raw_bismuth": "Raw Bismuth",
   "block.chisel_unlimited.bismuth_block": "Block of Bismuth",
   "item.chisel_unlimited.bismuth_block": "Block of Bismuth",
   "block.chisel_unlimited.bismuth_ore": "Bismuth Ore",
   "item.chisel_unlimited.bismuth_ore": "Bismuth Ore",
   "block.chisel_unlimited.bismuth_deepslate_ore": "Deepslate Bismuth Ore",
   "item.chisel_unlimited.bismuth_deepslate_ore": "Deepslate Bismuth Ore",
-  "creativetab.chisel_unlimited.bismuth_items": "Bismuth Items",
-  "creativetab.chisel_unlimited.bismuth_blocks": "Bismuth Blocks",
-  "item.chisel_unlimited.chisel": "Chisel",
-  "block.chisel_unlimited.magic_block": "Magic Block",
-  "item.chisel_unlimited.magic_block": "Magic Block",
-  "item.chisel_unlimited.radish": "Radish",
+  "creativetab.chisel_unlimited.chisel_unlimited": "Chisel Unlimited",
   "item.chisel_unlimited.frostfire_ice": "Frostfire Ice",
   "item.chisel_unlimited.starlight_ashes": "Starlight Ashes"
 }

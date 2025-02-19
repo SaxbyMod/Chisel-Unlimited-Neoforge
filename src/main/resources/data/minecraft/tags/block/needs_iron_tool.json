@@ -2,7 +2,6 @@
   "replace": false,
   "values": [
     "chisel_unlimited:bismuth_ore",
-    "chisel_unlimited:magic_block",
     "chisel_unlimited:bismuth_block"
   ]
 }

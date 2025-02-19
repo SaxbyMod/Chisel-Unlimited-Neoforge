@@ -20,28 +20,15 @@ public class ModAddedCreativeTabs {
         CREATIVE_TABS.register(tabBus);
     }
     // List of Tabs to Force-Feed Neoforge
-    public static final Supplier<CreativeModeTab> BISMUTH_ITEMS_TAB = CREATIVE_TABS.register("bismuth_items", () -> CreativeModeTab.builder()
-            .icon(()-> new ItemStack(ModAddedItems.BISMUTH.get()))
-            .title(Component.translatable("creativetab.chisel_unlimited.bismuth_items"))
+    public static final Supplier<CreativeModeTab> CHISEL_UNLIMITED = CREATIVE_TABS.register("chisel_unlimited", () -> CreativeModeTab.builder()
+            .icon(()-> new ItemStack(ModAddedBlocks.BISMUTH_BLOCK.get()))
+            .title(Component.translatable("creativetab.chisel_unlimited.chisel_unlimited"))
             .displayItems((itemDisplayParameters, output) -> {
-                output.accept(ModAddedItems.BISMUTH.get());
-                output.accept(ModAddedItems.RAW_BISMUTH.get());
-                output.accept(ModAddedItems.CHISEL.get());
-                output.accept(ModAddedItems.RADISH.get());
                 output.accept(ModAddedItems.FROSTFIRE_ICE.get());
                 output.accept(ModAddedItems.STARLIGHT_ASHES.get());
-            })
-            .build());
-
-    public static final Supplier<CreativeModeTab> BISMUTH_BLOCK_TAB = CREATIVE_TABS.register("bismuth_blocks", () -> CreativeModeTab.builder()
-            .withTabsBefore(ResourceLocation.fromNamespaceAndPath(ChiselUnlimited.MOD_ID, "bismuth_items"))
-            .icon(()-> new ItemStack(ModAddedBlocks.BISMUTH_BLOCK.get()))
-            .title(Component.translatable("creativetab.chisel_unlimited.bismuth_blocks"))
-            .displayItems((itemDisplayParameters, output) -> {
+                output.accept(ModAddedBlocks.BISMUTH_DEEPSLATE_ORE.get());
                 output.accept(ModAddedBlocks.BISMUTH_BLOCK.get());
                 output.accept(ModAddedBlocks.BISMUTH_ORE.get());
-                output.accept(ModAddedBlocks.BISMUTH_DEEPSLATE_ORE.get());
-                output.accept(ModAddedBlocks.MAGIC_BLOCK.get());
             })
             .build());
 }

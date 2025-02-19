@@ -1,23 +1,12 @@
 package com.creator.chiselunlimited;
 
+import com.creator.chiselunlimited.Extra.AddToChisel;
 import com.creator.chiselunlimited.block.ModAddedBlocks;
 import com.creator.chiselunlimited.item.ModAddedCreativeTabs;
 import com.creator.chiselunlimited.item.ModAddedItems;
 import org.slf4j.Logger;
 import com.mojang.logging.LogUtils;
-import net.minecraft.client.Minecraft;
-import net.minecraft.core.registries.BuiltInRegistries;
-import net.minecraft.core.registries.Registries;
-import net.minecraft.network.chat.Component;
-import net.minecraft.world.food.FoodProperties;
-import net.minecraft.world.item.BlockItem;
-import net.minecraft.world.item.CreativeModeTab;
 import net.minecraft.world.item.CreativeModeTabs;
-import net.minecraft.world.item.Item;
-import net.minecraft.world.level.block.Block;
-import net.minecraft.world.level.block.Blocks;
-import net.minecraft.world.level.block.state.BlockBehaviour;
-import net.minecraft.world.level.material.MapColor;
 import net.neoforged.api.distmarker.Dist;
 import net.neoforged.bus.api.IEventBus;
 import net.neoforged.bus.api.SubscribeEvent;
@@ -30,10 +19,6 @@ import net.neoforged.fml.event.lifecycle.FMLCommonSetupEvent;
 import net.neoforged.neoforge.common.NeoForge;
 import net.neoforged.neoforge.event.BuildCreativeModeTabContentsEvent;
 import net.neoforged.neoforge.event.server.ServerStartingEvent;
-import net.neoforged.neoforge.registries.DeferredBlock;
-import net.neoforged.neoforge.registries.DeferredHolder;
-import net.neoforged.neoforge.registries.DeferredItem;
-import net.neoforged.neoforge.registries.DeferredRegister;
 
 // The value here should match an entry in the META-INF/neoforge.mods.toml file
 @Mod(ChiselUnlimited.MOD_ID)
@@ -58,6 +43,10 @@ public class ChiselUnlimited
         ModAddedCreativeTabs.RegisterMyTabs(modEventBus);
         ModAddedItems.RegisterMyItems(modEventBus);
         ModAddedBlocks.RegisterMyBlocks(modEventBus);
+        // Add our test Blocks to the Andesite Chisel Group
+        AddToChisel.addToChisel("andesite", ModAddedBlocks.BISMUTH_BLOCK.getId());
+        AddToChisel.addToChisel("andesite", ModAddedBlocks.BISMUTH_DEEPSLATE_ORE.getId());
+        AddToChisel.addToChisel("andesite", ModAddedBlocks.BISMUTH_ORE.getId());
 
         // Register the item to a creative tab
         modEventBus.addListener(this::addCreative);
@@ -67,30 +56,18 @@ public class ChiselUnlimited
 
     private void commonSetup(final FMLCommonSetupEvent event)
     {
-
     }
     // Add the example block item to the building blocks tab
     private void addCreative(BuildCreativeModeTabContentsEvent event)
     {
         // Add BISMUTH to INGREDIENTS
         if (event.getTabKey() == CreativeModeTabs.INGREDIENTS) {
-            event.accept(ModAddedItems.BISMUTH.get());
-            event.accept(ModAddedItems.RAW_BISMUTH.get());
             event.accept(ModAddedItems.FROSTFIRE_ICE.get());
             event.accept(ModAddedItems.STARLIGHT_ASHES.get());
         }
         if (event.getTabKey() == CreativeModeTabs.BUILDING_BLOCKS) {
             event.accept(ModAddedBlocks.BISMUTH_BLOCK.get());
             event.accept(ModAddedBlocks.BISMUTH_ORE.get());
-        }
-        if (event.getTabKey() == CreativeModeTabs.TOOLS_AND_UTILITIES) {
-            event.accept(ModAddedItems.CHISEL.get());
-        }
-        if (event.getTabKey() == CreativeModeTabs.FUNCTIONAL_BLOCKS) {
-            event.accept(ModAddedBlocks.MAGIC_BLOCK.get());
-        }
-        if (event.getTabKey() == CreativeModeTabs.FOOD_AND_DRINKS) {
-            event.accept(ModAddedItems.RADISH.get());
         }
     }
 
