@@ -1,0 +1,10 @@
+{
+  "variants": {
+    "powered=false": {
+      "model": "chisel_unlimited:block/bismuth_pressure_plate"
+    },
+    "powered=true": {
+      "model": "chisel_unlimited:block/bismuth_pressure_plate_down"
+    }
+  }
+}

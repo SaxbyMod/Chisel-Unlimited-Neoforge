@@ -29,6 +29,12 @@ public class ModAddedCreativeTabs {
                 output.accept(ModAddedBlocks.BISMUTH_DEEPSLATE_ORE.get());
                 output.accept(ModAddedBlocks.BISMUTH_BLOCK.get());
                 output.accept(ModAddedBlocks.BISMUTH_ORE.get());
+                output.accept(ModAddedBlocks.BISMUTH_SLAB.get());
+                output.accept(ModAddedBlocks.BISMUTH_STAIR.get());
+                output.accept(ModAddedBlocks.BISMUTH_FENCE.get());
+                output.accept(ModAddedBlocks.BISMUTH_FENCE_GATE.get());
+                output.accept(ModAddedBlocks.BISMUTH_PRESSURE_PLATE.get());
+                output.accept(ModAddedBlocks.BISMUTH_BUTTON.get());
             })
             .build());
 }

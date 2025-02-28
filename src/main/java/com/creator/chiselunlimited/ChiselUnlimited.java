@@ -60,15 +60,6 @@ public class ChiselUnlimited
     // Add the example block item to the building blocks tab
     private void addCreative(BuildCreativeModeTabContentsEvent event)
     {
-        // Add BISMUTH to INGREDIENTS
-        if (event.getTabKey() == CreativeModeTabs.INGREDIENTS) {
-            event.accept(ModAddedItems.FROSTFIRE_ICE.get());
-            event.accept(ModAddedItems.STARLIGHT_ASHES.get());
-        }
-        if (event.getTabKey() == CreativeModeTabs.BUILDING_BLOCKS) {
-            event.accept(ModAddedBlocks.BISMUTH_BLOCK.get());
-            event.accept(ModAddedBlocks.BISMUTH_ORE.get());
-        }
     }
 
     // You can use SubscribeEvent and let the Event Bus discover methods to call

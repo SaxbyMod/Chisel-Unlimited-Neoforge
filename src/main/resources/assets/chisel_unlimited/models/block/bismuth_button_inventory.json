@@ -1,0 +1,6 @@
+{
+  "parent": "minecraft:block/button_inventory",
+  "textures": {
+    "texture": "chisel_unlimited:block/bismuth_block"
+  }
+}

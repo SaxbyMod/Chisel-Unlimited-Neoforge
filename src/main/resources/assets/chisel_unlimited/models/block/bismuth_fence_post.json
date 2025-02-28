@@ -1,0 +1,6 @@
+{
+  "parent": "minecraft:block/fence_post",
+  "textures": {
+    "texture": "chisel_unlimited:block/bismuth_block"
+  }
+}

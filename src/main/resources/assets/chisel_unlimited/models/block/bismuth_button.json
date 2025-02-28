@@ -1,0 +1,6 @@
+{
+  "parent": "minecraft:block/button",
+  "textures": {
+    "texture": "chisel_unlimited:block/bismuth_block"
+  }
+}

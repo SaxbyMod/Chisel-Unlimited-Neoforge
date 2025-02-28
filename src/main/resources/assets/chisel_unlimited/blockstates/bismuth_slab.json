@@ -1,0 +1,13 @@
+{
+  "variants": {
+    "type=bottom": {
+      "model": "chisel_unlimited:block/bismuth_slab"
+    },
+    "type=double": {
+      "model": "chisel_unlimited:block/bismuth_block"
+    },
+    "type=top": {
+      "model": "chisel_unlimited:block/bismuth_slab_top"
+    }
+  }
+}
