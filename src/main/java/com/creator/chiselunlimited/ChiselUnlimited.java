@@ -6,7 +6,6 @@ import com.creator.chiselunlimited.item.ModAddedCreativeTabs;
 import com.creator.chiselunlimited.item.ModAddedItems;
 import org.slf4j.Logger;
 import com.mojang.logging.LogUtils;
-import net.minecraft.world.item.CreativeModeTabs;
 import net.neoforged.api.distmarker.Dist;
 import net.neoforged.bus.api.IEventBus;
 import net.neoforged.bus.api.SubscribeEvent;
@@ -43,10 +42,19 @@ public class ChiselUnlimited
         ModAddedCreativeTabs.RegisterMyTabs(modEventBus);
         ModAddedItems.RegisterMyItems(modEventBus);
         ModAddedBlocks.RegisterMyBlocks(modEventBus);
-        // Add our test Blocks to the Andesite Chisel Group
-        AddToChisel.addToChisel("andesite", ModAddedBlocks.BISMUTH_BLOCK.getId());
-        AddToChisel.addToChisel("andesite", ModAddedBlocks.BISMUTH_DEEPSLATE_ORE.getId());
-        AddToChisel.addToChisel("andesite", ModAddedBlocks.BISMUTH_ORE.getId());
+        // Create a test group of blocks and add items to it.
+        AddToChisel.addGroupToChisel("bismuth");
+        AddToChisel.addToChisel("bismuth", ModAddedBlocks.BISMUTH_BLOCK.getId());
+        AddToChisel.addToChisel("bismuth", ModAddedBlocks.BISMUTH_BUTTON.getId());
+        AddToChisel.addToChisel("bismuth", ModAddedBlocks.BISMUTH_STAIR.getId());
+        AddToChisel.addToChisel("bismuth", ModAddedBlocks.BISMUTH_PRESSURE_PLATE.getId());
+        AddToChisel.addToChisel("bismuth", ModAddedBlocks.BISMUTH_FENCE.getId());
+        AddToChisel.addToChisel("bismuth", ModAddedBlocks.BISMUTH_FENCE_GATE.getId());
+        AddToChisel.addToChisel("bismuth", ModAddedBlocks.BISMUTH_SLAB.getId());
+        AddToChisel.addToChisel("bismuth", ModAddedBlocks.BISMUTH_WALL.getId());
+        AddToChisel.addToChisel("bismuth", ModAddedBlocks.BISMUTH_LEVER.getId());
+        AddToChisel.addToChisel("bismuth", ModAddedBlocks.BISMUTH_DOOR.getId());
+        AddToChisel.addToChisel("bismuth", ModAddedBlocks.BISMUTH_TRAPDOOR.getId());
 
         // Register the item to a creative tab
         modEventBus.addListener(this::addCreative);

@@ -4,11 +4,9 @@ import com.creator.chiselunlimited.ChiselUnlimited;
 import com.creator.chiselunlimited.block.ModAddedBlocks;
 import net.minecraft.core.registries.Registries;
 import net.minecraft.network.chat.Component;
-import net.minecraft.resources.ResourceLocation;
 import net.minecraft.world.item.CreativeModeTab;
 import net.minecraft.world.item.ItemStack;
 import net.neoforged.bus.api.IEventBus;
-import net.neoforged.fml.common.Mod;
 import net.neoforged.neoforge.registries.DeferredRegister;
 import java.util.function.Supplier;
 
@@ -35,6 +33,10 @@ public class ModAddedCreativeTabs {
                 output.accept(ModAddedBlocks.BISMUTH_FENCE_GATE.get());
                 output.accept(ModAddedBlocks.BISMUTH_PRESSURE_PLATE.get());
                 output.accept(ModAddedBlocks.BISMUTH_BUTTON.get());
+                output.accept(ModAddedBlocks.BISMUTH_WALL.get());
+                output.accept(ModAddedBlocks.BISMUTH_LEVER.get());
+                output.accept(ModAddedBlocks.BISMUTH_DOOR.get());
+                output.accept(ModAddedBlocks.BISMUTH_TRAPDOOR.get());
             })
             .build());
 }

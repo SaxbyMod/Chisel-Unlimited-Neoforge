@@ -9,4 +9,7 @@ public class AddToChisel {
     public static void addToChisel(String string, ResourceLocation blockID) {
         ChiselGroupLookup.addItemToGroup(string, blockID);
     }
+    public static void addGroupToChisel(String string) {
+        ChiselGroupLookup.addGroup(string);
+    }
 }
