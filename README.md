@@ -1,27 +1,47 @@
+# Chisel Unlimited
 
-Installation information
-=======
+## What is this mod? 
 
-This template repository can be directly cloned to get you started with a new
-mod. Simply create a new repository cloned from this one, by following the
-instructions at [github](https://docs.github.com/en/repositories/creating-and-managing-repositories/creating-a-repository-from-a-template).
+This mod is a modification of the game which extends chisel into more vanilla blocks, as well as provides variants of vanilla block types to the chiselable variants, technically the same with vanilla blocks as well.
 
-Once you have your clone, simply open the repository in the IDE of your choice. The usual recommendation for an IDE is either IntelliJ IDEA or Eclipse.
+## What is a block set?
 
-> **Note**: For Eclipse, use tasks in `Launch Group` instead of ones founds in `Java Application`. A preparation task must run before launching the game. NeoGradle uses launch groups to do these subsequently.
+All Blocks:
+--->    Block Variants and Base Block
+--->    Slab
+--->    Stair
+--->    Door
+--->    Trapdoor
 
-If at any point you are missing libraries in your IDE, or you've run into problems you can
-run `gradlew --refresh-dependencies` to refresh the local cache. `gradlew clean` to reset everything 
-{this does not affect your code} and then start the process again.
+Wood and Stone Type Block Types:
+--->    Pressure Plate
+--->    Button
+--->    Certain Tool Stations
 
-Mapping Names:
-============
-By default, the MDK is configured to use the official mapping names from Mojang for methods and fields 
-in the Minecraft codebase. These names are covered by a specific license. All modders should be aware of this
-license. For the latest license text, refer to the mapping file itself, or the reference copy here:
-https://github.com/NeoForged/NeoForm/blob/main/Mojang.md
+Wood Specific:
+--->    Fence
+--->    Fence Gate
+--->    Chest
+--->    Crafting Table
+--->    Sign
+--->    Hanging Sign
+--->    Lever [Will probably have the stick change texture somehow depending on wood type, and the stone bit change depending on the stone type provided]
+--->    Ladders
 
-Additional Resources: 
-==========
-Community Documentation: https://docs.neoforged.net/  
-NeoForged Discord: https://discord.neoforged.net/
+Stone Specific:
+--->    Wall
+--->    Furnace
+--->    Smoker
+--->    Smelter
+
+## What mods are compatible with this mod?
+
+### 1.21.4
+* Chisel
+* More to Come
+
+![Minecraft-Mod(pack)s](https://github.com/user-attachments/assets/8feb3c3c-81f0-4314-83d7-8314aa49d16a)
+
+Project Discord: https://discord.gg/BkQCfcR3Qf
+
+Other Projects: https://linktr.ee/saxbymod
