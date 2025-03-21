@@ -7,31 +7,51 @@ This mod is a modification of the game which extends chisel into more vanilla bl
 ## What is a block set?
 
 All Blocks:
+
 --->    Block Variants and Base Block
+
 --->    Slab
+
 --->    Stair
+
 --->    Door
+
 --->    Trapdoor
 
 Wood and Stone Type Block Types:
+
 --->    Pressure Plate
+
 --->    Button
+
 --->    Certain Tool Stations
 
 Wood Specific:
+
 --->    Fence
+
 --->    Fence Gate
+
 --->    Chest
+
 --->    Crafting Table
+
 --->    Sign
+
 --->    Hanging Sign
+
 --->    Lever [Will probably have the stick change texture somehow depending on wood type, and the stone bit change depending on the stone type provided]
+
 --->    Ladders
 
 Stone Specific:
+
 --->    Wall
+
 --->    Furnace
+
 --->    Smoker
+
 --->    Smelter
 
 ## What mods are compatible with this mod?
