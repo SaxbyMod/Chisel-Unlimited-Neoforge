@@ -1,4 +1,4 @@
-Chisel Unlimited is an extension to Chisel Reborn which aims to add in new block variants [Stairs, Slabs, Levers etc.] for almost all vanilla blocks and on top of that several new chisel able versions of the blocks, with plans after initial release to dabble into mod compatibility and apply the same thing to other mods such as Biomes O' Plenty adjacent to how Unlimited Chisel Works worked for 1.12.2 however assets and such ideally aren't automated.
+Chisel Unlimited is an extension to [Chisel Reborn](<https://www.curseforge.com/minecraft/mc-mods/chisel-reborn>) which aims to add in new block variants [Stairs, Slabs, Levers etc.] for almost all vanilla blocks and on top of that several new chisel able versions of the blocks, with plans after initial release to dabble into mod compatibility and apply the same thing to other mods such as Biomes O' Plenty adjacent to how Unlimited Chisel Works worked for 1.12.2 however assets and such ideally aren't automated.
 
 Block Variants and how they'll be sorted out;
 
