@@ -1,67 +1,11 @@
-# Chisel Unlimited
+Chisel Unlimited is an extension to Chisel Reborn which aims to add in new block variants [Stairs, Slabs, Levers etc.] for almost all vanilla blocks and on top of that several new chisel able versions of the blocks, with plans after initial release to dabble into mod compatibility and apply the same thing to other mods such as Biomes O' Plenty adjacent to how Unlimited Chisel Works worked for 1.12.2 however assets and such ideally aren't automated.
 
-## What is this mod? 
+Block Variants and how they'll be sorted out;
 
-This mod is a modification of the game which extends chisel into more vanilla blocks, as well as provides variants of vanilla block types to the chiselable variants, technically the same with vanilla blocks as well.
+Woods&Planks: Doors, Trapdoors, Pressure Plates, Buttons, Levers, Tool Stations, Fences, Fence Gates, Chests, Crafting Table, Signs, Hanging Signs, Ladders
+Stones: Doors, Trapdoors, Pressure Plates, Buttons, Levers, Tool Stations, Walls, Furnace, Smelter, Smoker
+All Blocks: Block Variants [Aiming for at least 10-20 each] and Base Block, Slabs, Stairs, Stone cutter compat
 
-## What is a block set?
+How chisel works; 
 
-All Blocks:
-
---->    Block Variants and Base Block
-
---->    Slab
-
---->    Stair
-
---->    Door
-
---->    Trapdoor
-
-Wood and Stone Type Block Types:
-
---->    Pressure Plate
-
---->    Button
-
---->    Certain Tool Stations
-
-Wood Specific:
-
---->    Fence
-
---->    Fence Gate
-
---->    Chest
-
---->    Crafting Table
-
---->    Sign
-
---->    Hanging Sign
-
---->    Lever [Will probably have the stick change texture somehow depending on wood type, and the stone bit change depending on the stone type provided]
-
---->    Ladders
-
-Stone Specific:
-
---->    Wall
-
---->    Furnace
-
---->    Smoker
-
---->    Smelter
-
-## What mods are compatible with this mod?
-
-### 1.21.4
-* Chisel
-* More to Come
-
-![Minecraft-Mod(pack)s](https://github.com/user-attachments/assets/8feb3c3c-81f0-4314-83d7-8314aa49d16a)
-
-Project Discord: https://discord.gg/BkQCfcR3Qf
-
-Other Projects: https://linktr.ee/saxbymod
+Make an item which is made from a stick and a peice of iron, that item on left click changes the state of the block looked at to the next variant in cycle and on right click opens a menu allowing one to put in a amount of a block to be changed into any of the shown variants.
