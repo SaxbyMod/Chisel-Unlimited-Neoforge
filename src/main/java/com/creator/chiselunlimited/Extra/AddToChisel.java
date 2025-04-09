@@ -1,6 +1,6 @@
 package com.creator.chiselunlimited.Extra;
 
-import com.matthewperiut.chisel.block.ChiselGroupLookup;
+import com.periut.chisel.block.ChiselGroupLookup;
 import net.minecraft.resources.ResourceLocation;
 
 import java.util.List;

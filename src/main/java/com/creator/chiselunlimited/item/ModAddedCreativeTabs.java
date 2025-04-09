@@ -2,6 +2,7 @@ package com.creator.chiselunlimited.item;
 
 import com.creator.chiselunlimited.ChiselUnlimited;
 import com.creator.chiselunlimited.block.ModAddedBlocks;
+import com.periut.chisel.Chisel;
 import net.minecraft.core.registries.Registries;
 import net.minecraft.network.chat.Component;
 import net.minecraft.world.item.CreativeModeTab;
@@ -19,7 +20,7 @@ public class ModAddedCreativeTabs {
     }
     // List of Tabs to Force-Feed Neoforge
     public static final Supplier<CreativeModeTab> CHISEL_UNLIMITED = CREATIVE_TABS.register("chisel_unlimited", () -> CreativeModeTab.builder()
-            .icon(()-> new ItemStack(ModAddedBlocks.BISMUTH_BLOCK.get()))
+            .icon(()-> new ItemStack(Chisel.chiselSupplier.get()))
             .title(Component.translatable("creativetab.chisel_unlimited.chisel_unlimited"))
             .displayItems((itemDisplayParameters, output) -> {
                 output.accept(ModAddedItems.FROSTFIRE_ICE.get());
@@ -37,6 +38,17 @@ public class ModAddedCreativeTabs {
                 output.accept(ModAddedBlocks.BISMUTH_LEVER.get());
                 output.accept(ModAddedBlocks.BISMUTH_DOOR.get());
                 output.accept(ModAddedBlocks.BISMUTH_TRAPDOOR.get());
+                output.accept(ModAddedItems.ACCACIA_STICK.get());
+                output.accept(ModAddedItems.BAMBOO_STICK.get());
+                output.accept(ModAddedItems.BIRCH_STICK.get());
+                output.accept(ModAddedItems.CHERRY_STICK.get());
+                output.accept(ModAddedItems.CRIMSON_STICK.get());
+                output.accept(ModAddedItems.DARK_OAK_STICK.get());
+                output.accept(ModAddedItems.JUNGLE_STICK.get());
+                output.accept(ModAddedItems.MANGROVE_STICK.get());
+                output.accept(ModAddedItems.OAK_STICK.get());
+                output.accept(ModAddedItems.SPRUCE_STICK.get());
+                output.accept(ModAddedItems.WARPED_STICK.get());
             })
             .build());
 }
