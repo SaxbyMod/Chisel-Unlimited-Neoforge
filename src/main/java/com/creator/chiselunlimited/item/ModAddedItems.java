@@ -21,7 +21,7 @@ public class ModAddedItems {
     }
 
     // Sticks
-    public static final DeferredItem<Item> ACCACIA_STICK = ITEMS.register("accacia_stick", () -> new Item(new Item.Properties().setId(ResourceKey.create(Registries.ITEM, ResourceLocation.fromNamespaceAndPath(ChiselUnlimited.MOD_ID, "accacia_stick")))));
+    public static final DeferredItem<Item> ACACIA_STICK = ITEMS.register("acacia_stick", () -> new Item(new Item.Properties().setId(ResourceKey.create(Registries.ITEM, ResourceLocation.fromNamespaceAndPath(ChiselUnlimited.MOD_ID, "acacia_stick")))));
     public static final DeferredItem<Item> BAMBOO_STICK = ITEMS.register("bamboo_stick", () -> new Item(new Item.Properties().setId(ResourceKey.create(Registries.ITEM, ResourceLocation.fromNamespaceAndPath(ChiselUnlimited.MOD_ID, "bamboo_stick")))));
     public static final DeferredItem<Item> BIRCH_STICK = ITEMS.register("birch_stick", () -> new Item(new Item.Properties().setId(ResourceKey.create(Registries.ITEM, ResourceLocation.fromNamespaceAndPath(ChiselUnlimited.MOD_ID, "birch_stick")))));
     public static final DeferredItem<Item> CHERRY_STICK = ITEMS.register("cherry_stick", () -> new Item(new Item.Properties().setId(ResourceKey.create(Registries.ITEM, ResourceLocation.fromNamespaceAndPath(ChiselUnlimited.MOD_ID, "cherry_stick")))));
